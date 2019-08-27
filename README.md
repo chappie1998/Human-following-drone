@@ -69,7 +69,7 @@ Run ROS master on the surface computer and get a list of topics on raspberry pi.
 ### Step 3:- 
   Attach the raspberry pi and pi cam to the drone. Through USB cable connect raspberry pi to pixhawk. Connect the raspberry pi and the surface computer on the same the network(for now mobile hotspot can be use). 
   
-##### Check surface computer's IP address and put it in raspberry pi's and surface computer's scripts.
+##### Note:- Check surface computer's IP address and put it in raspberry pi's and surface computer's scripts.
 
 ##### Checking:- 
 Run the surface computer's [stream_server_test.py](https://github.com/ankitgc1/Human-following-drone/blob/master/scripts/stream_server_test.py) script on the surface computer and then run [stream_client_fast.py](https://github.com/ankitgc1/Human-following-drone/blob/master/raspbrry%20pi/stream_client_fast.py) script on raspberry pi. Now the video stream of your raspberry pi should be able to stream on your surface computer.
