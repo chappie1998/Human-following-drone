@@ -1,6 +1,8 @@
 # Human-following-drone
 
 ## Description:- 
+![alt text](https://github.com/ankitgc1/Human-following-drone/blob/master/images/drone_2.jpg)
+
   As drones become more and more complex, there are many different features that users can pick from. Having a drone camera that follows you has a unique appeal for those in the filming and videography realm: the pilot can lock the 'drone's direction on a very specified moving target.
   
   After the pilot selects this function, the drone will then follow the target without needing to use the 'pilot's input for control, by use of sensors, and software that allows the device to lock in on specific objects. While this feature is activated, the individual flying can focus on their own choice of creative photo and video elements, not having to worry about the duties of stabilizing flight.
@@ -9,6 +11,8 @@
 
   I present you my project "The human following drone." It is based on image processing(Open CV) algorithm with ROS(robot operating system).
 
+## Basic process:- 
+![alt text](https://github.com/ankitgc1/Human-following-drone/blob/master/images/process.png)
 
 ## Hardware requirement:-
 
