@@ -45,9 +45,7 @@ After all the process, If everything went right, You should now see the drone ta
 
 ## Project setup:-
 ### Step 1:-
-The PX4 software used in the project. PX4 is an open-source flight control software for drones and other unmanned vehicles. 
-
-For assembling the drone follow this tutorial:- https://docs.px4.io/master/en/assembly/
+The PX4 software used in the project. PX4 is an open-source flight control software for drones and other unmanned vehicles. For assembling the drone and and configuration follow this [tutorial.](https://docs.px4.io/master/en/assembly/) 
 
 to know more about PX4:- https://px4.io/
 
