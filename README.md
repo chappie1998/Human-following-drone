@@ -52,19 +52,19 @@ For assembling the drone follow this tutorial:- https://docs.px4.io/master/en/as
 to know more about PX4:- https://px4.io/
 
 ##### Checking:- 
-  Check the position hold mode. This mode should work fine for this project. 
+Check the position hold mode. This mode should work fine for this project. 
 
 ### Step 2:- 
   Install ubuntu mate 18.04 OS in the raspberry pi. It is easy to install and use the ROS in ubuntu. After that install ROS in raspberry pi. Clone raspberry pi's code in the raspberry pi. You also need ROS in surface computer. Make same ROS master for both systems. 
 
 ##### Checking:- 
-  Run ROS master on the surface computer and get a list of topics on raspberry pi.
+Run ROS master on the surface computer and get a list of topics on raspberry pi.
 
 ### Step 3:- 
   Attach the raspberry pi and pi cam to the drone. Through USB cable connect raspberry pi and pixhawk. Connect the raspberry pi and the surface computer on the same the network(for now mobile hotspot can be used). #Check surface computer's IP address and put it in raspberry pi's and surface computer's code.
 
 ##### Checking:- 
-  Run the surface computer's stream_server_test.py script on the surface computer and then run stream_fast.py script on raspberry pi. Now the video stream of your raspberry pi should be able to stream on your surface computer.
+Run the surface computer's stream_server_test.py script on the surface computer and then run stream_fast.py script on raspberry pi. Now the video stream of your raspberry pi should be able to stream on your surface computer.
 
 #### Note:- Always run surface computer's streaming code first, after running this code you should run the raspberry pi's code. Otherwise, you will get an error in raspberry pi's code.
 
