@@ -49,6 +49,8 @@ After all the process, If everything went right, You should now see the drone ta
 
 
 ### Simulation:- 
+[![Watch the video](https://github.com/ankitgc1/Human-following-drone/blob/master/images/video_image.png)](https://www.youtube.com/watch?v=IBrXL4ohF1M)
+
   The simulation is useful for every project. So, let's try the simulation. First, launch the simulation by "roslaunch px4 mavros_posix_sitl.launch" command and then there are two files one uses your system webcam's stream, and the other one uses the raspberry pi stream(for this step2, and step3 should be completed). Run drone_publisher_webcam.py script for your system's webcam and then drone_subscribe.py script. 
 
 ## Project setup:-
