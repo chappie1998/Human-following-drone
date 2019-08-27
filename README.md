@@ -11,6 +11,10 @@
 
   I present you my project "The human following drone." It is based on image processing(Open CV) algorithm with ROS(robot operating system).
 
+Learn more about Open cv:- https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_tutorials.html
+
+Learn more about ROS:- http://wiki.ros.org/ROS/Tutorials
+
 ## Basic process:- 
 ![alt text](https://github.com/ankitgc1/Human-following-drone/blob/master/images/process.png)
 
@@ -45,7 +49,7 @@ After all the process, If everything went right, You should now see the drone ta
 
 
 ### Simulation:- 
-  The simulation is useful for every project. So, let's try the simulation. There are two files one uses your system webcam's stream, and the other one uses the raspberry pi stream(for this step2, and step3 should be completed). Run drone_publisher_webcam.py script for your system's webcam and then drone_subscribe.py script. 
+  The simulation is useful for every project. So, let's try the simulation. First, launch the simulation by "roslaunch px4 mavros_posix_sitl.launch" command and then there are two files one uses your system webcam's stream, and the other one uses the raspberry pi stream(for this step2, and step3 should be completed). Run drone_publisher_webcam.py script for your system's webcam and then drone_subscribe.py script. 
 
 ## Project setup:-
 ### Step 1:-
@@ -57,16 +61,18 @@ to know more about PX4:- https://px4.io/
 Check the position hold mode. This mode should work fine for this project. 
 
 ### Step 2:- 
-  Install ubuntu mate 18.04 OS in the raspberry pi. It is easy to install and use the ROS in ubuntu. After that install ROS in raspberry pi. Clone raspberry pi's code in the raspberry pi. You also need ROS in surface computer. Make same ROS master for both systems. 
+  Install [ubuntu mate 18.04](https://ubuntu-mate.org/download/) OS in the raspberry pi. It is easy to install and use the ROS in ubuntu. After that install ROS in raspberry pi. Clone [raspberry pi's](https://github.com/ankitgc1/Human-following-drone/tree/master/raspbrry%20pi) code in the raspberry pi. You also need ROS in surface computer. Both machines should have  same ROS master. 
 
 ##### Checking:- 
 Run ROS master on the surface computer and get a list of topics on raspberry pi.
 
 ### Step 3:- 
-  Attach the raspberry pi and pi cam to the drone. Through USB cable connect raspberry pi and pixhawk. Connect the raspberry pi and the surface computer on the same the network(for now mobile hotspot can be used). #Check surface computer's IP address and put it in raspberry pi's and surface computer's code.
+  Attach the raspberry pi and pi cam to the drone. Through USB cable connect raspberry pi to pixhawk. Connect the raspberry pi and the surface computer on the same the network(for now mobile hotspot can be use). 
+  
+##### Check surface computer's IP address and put it in raspberry pi's and surface computer's scripts.
 
 ##### Checking:- 
-Run the surface computer's stream_server_test.py script on the surface computer and then run stream_fast.py script on raspberry pi. Now the video stream of your raspberry pi should be able to stream on your surface computer.
+Run the surface computer's [stream_server_test.py](https://github.com/ankitgc1/Human-following-drone/blob/master/scripts/stream_server_test.py) script on the surface computer and then run [stream_client_fast.py](https://github.com/ankitgc1/Human-following-drone/blob/master/raspbrry%20pi/stream_client_fast.py) script on raspberry pi. Now the video stream of your raspberry pi should be able to stream on your surface computer.
 
 #### Note:- Always run surface computer's streaming code first, after running this code you should run the raspberry pi's code. Otherwise, you will get an error in raspberry pi's code.
 
